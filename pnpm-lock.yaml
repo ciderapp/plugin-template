@@ -20,13 +20,13 @@ importers:
     devDependencies:
       '@ciderapp/pluginkit':
         specifier: github:ciderapp/pluginkit
-        version: https://codeload.github.com/ciderapp/pluginkit/tar.gz/a9b5296452201259bad4849b877ee0a6acce1b05
+        version: git+https://git@github.com:ciderapp/pluginkit.git#9df5661c0b5bea29a22d1c4d454e0a8ebeebde91
       '@types/lodash':
         specifier: ^4.17.6
         version: 4.17.10
       '@types/musickit':
         specifier: ciderapp/musickit-types
-        version: https://codeload.github.com/ciderapp/musickit-types/tar.gz/86ceb915ea55ce61ebd7bb3e36685a68c908a5df
+        version: git+https://git@github.com:ciderapp/musickit-types.git#2600a2c345cc30a9f94f69d85cc1e9a7430bb466
       '@types/node':
         specifier: ^20.14.9
         version: 20.16.10
@@ -89,9 +89,9 @@ packages:
     resolution: {integrity: sha512-vwIVdXG+j+FOpkwqHRcBgHLYNL7XMkufrlaFvL9o6Ai9sJn9+PdyIL5qa0XzTZw084c+u9LOls53eoZWP/W5WQ==}
     engines: {node: '>=6.9.0'}
 
-  '@ciderapp/pluginkit@https://codeload.github.com/ciderapp/pluginkit/tar.gz/a9b5296452201259bad4849b877ee0a6acce1b05':
-    resolution: {tarball: https://codeload.github.com/ciderapp/pluginkit/tar.gz/a9b5296452201259bad4849b877ee0a6acce1b05}
-    version: 0.0.4
+  '@ciderapp/pluginkit@git+https://git@github.com:ciderapp/pluginkit.git#9df5661c0b5bea29a22d1c4d454e0a8ebeebde91':
+    resolution: {commit: 9df5661c0b5bea29a22d1c4d454e0a8ebeebde91, repo: git@github.com:ciderapp/pluginkit.git, type: git}
+    version: 0.0.5
 
   '@esbuild/aix-ppc64@0.21.5':
     resolution: {integrity: sha512-1SDgH6ZSPTlggy1yI6+Dbkiz8xzpHJEVAlF/AM1tHPLsf5STom9rwtjE4hKAF20FfXXNTFqEYXyJNWh1GiZedQ==}
@@ -492,8 +492,8 @@ packages:
   '@types/lodash@4.17.10':
     resolution: {integrity: sha512-YpS0zzoduEhuOWjAotS6A5AVCva7X4lVlYLF0FYHAY9sdraBfnatttHItlWeZdGhuEkf+OzMNg2ZYAx8t+52uQ==}
 
-  '@types/musickit@https://codeload.github.com/ciderapp/musickit-types/tar.gz/86ceb915ea55ce61ebd7bb3e36685a68c908a5df':
-    resolution: {tarball: https://codeload.github.com/ciderapp/musickit-types/tar.gz/86ceb915ea55ce61ebd7bb3e36685a68c908a5df}
+  '@types/musickit@git+https://git@github.com:ciderapp/musickit-types.git#2600a2c345cc30a9f94f69d85cc1e9a7430bb466':
+    resolution: {commit: 2600a2c345cc30a9f94f69d85cc1e9a7430bb466, repo: git@github.com:ciderapp/musickit-types.git, type: git}
     version: 1.0.0
 
   '@types/node@20.16.10':
@@ -705,8 +705,8 @@ packages:
   muggle-string@0.4.1:
     resolution: {integrity: sha512-VNTrAak/KhO2i8dqqnqnAHOa3cYBwXEZe9h+D5h/1ZqFSTEFHdM65lR7RoIqq3tBBYavsOXV84NoHXZ0AkPyqQ==}
 
-  nanoid@3.3.7:
-    resolution: {integrity: sha512-eSRppjcPIatRIMC1U6UngP8XFcz8MQWGQdt1MTBQ7NaAmvXDfvNxbvWV3x2y6CdEUciCSsDHDQZbhYaB8QEo2g==}
+  nanoid@3.3.8:
+    resolution: {integrity: sha512-WNLf5Sd8oZxOm+TzppcYk8gVOgP+l58xNy58D0nbUnOxOWRWvlcCV4kUF7ltmI6PsrLl/BgKEyS4mqsGChFN0w==}
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
     hasBin: true
 
@@ -940,9 +940,9 @@ snapshots:
       '@babel/helper-validator-identifier': 7.25.7
       to-fast-properties: 2.0.0
 
-  '@ciderapp/pluginkit@https://codeload.github.com/ciderapp/pluginkit/tar.gz/a9b5296452201259bad4849b877ee0a6acce1b05':
+  '@ciderapp/pluginkit@git+https://git@github.com:ciderapp/pluginkit.git#9df5661c0b5bea29a22d1c4d454e0a8ebeebde91':
     dependencies:
-      '@types/musickit': https://codeload.github.com/ciderapp/musickit-types/tar.gz/86ceb915ea55ce61ebd7bb3e36685a68c908a5df
+      '@types/musickit': git+https://git@github.com:ciderapp/musickit-types.git#2600a2c345cc30a9f94f69d85cc1e9a7430bb466
 
   '@esbuild/aix-ppc64@0.21.5':
     optional: true
@@ -1165,7 +1165,7 @@ snapshots:
 
   '@types/lodash@4.17.10': {}
 
-  '@types/musickit@https://codeload.github.com/ciderapp/musickit-types/tar.gz/86ceb915ea55ce61ebd7bb3e36685a68c908a5df': {}
+  '@types/musickit@git+https://git@github.com:ciderapp/musickit-types.git#2600a2c345cc30a9f94f69d85cc1e9a7430bb466': {}
 
   '@types/node@20.16.10':
     dependencies:
@@ -1431,7 +1431,7 @@ snapshots:
 
   muggle-string@0.4.1: {}
 
-  nanoid@3.3.7: {}
+  nanoid@3.3.8: {}
 
   path-browserify@1.0.1: {}
 
@@ -1457,7 +1457,7 @@ snapshots:
 
   postcss@8.4.47:
     dependencies:
-      nanoid: 3.3.7
+      nanoid: 3.3.8
       picocolors: 1.1.0
       source-map-js: 1.2.1
 
