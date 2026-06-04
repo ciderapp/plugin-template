@@ -19,8 +19,8 @@ importers:
         version: 3.5.35(typescript@5.6.2)
     devDependencies:
       '@ciderapp/pluginkit':
-        specifier: ../cider-pluginkit
-        version: link:../cider-pluginkit
+        specifier: github:ciderapp/pluginkit#cider-4
+        version: https://codeload.github.com/ciderapp/pluginkit/tar.gz/9b92a4d6d1ff731ee8699f722661fbd038ff36b5
       '@types/lodash':
         specifier: ^4.17.6
         version: 4.17.10
@@ -105,6 +105,10 @@ packages:
   '@babel/types@7.29.7':
     resolution: {integrity: sha512-4zBIxpPzowiZpusoFkyGVwakdRJUyuH5PxQ/PrqghfdFWWasvnCdPfQXHrenDai+gyLARulZjZowCOj6fjT4pA==}
     engines: {node: '>=6.9.0'}
+
+  '@ciderapp/pluginkit@https://codeload.github.com/ciderapp/pluginkit/tar.gz/9b92a4d6d1ff731ee8699f722661fbd038ff36b5':
+    resolution: {tarball: https://codeload.github.com/ciderapp/pluginkit/tar.gz/9b92a4d6d1ff731ee8699f722661fbd038ff36b5}
+    version: 1.0.0-pre.1
 
   '@emnapi/core@1.10.0':
     resolution: {integrity: sha512-yq6OkJ4p82CAfPl0u9mQebQHKPJkY7WrIuk205cTYnYe+k2Z8YBh11FrbRG/H6ihirqcacOgl2BIO8oyMQLeXw==}
@@ -485,6 +489,10 @@ packages:
 
   '@types/musickit@https://codeload.github.com/ciderapp/musickit-types/tar.gz/86ceb915ea55ce61ebd7bb3e36685a68c908a5df':
     resolution: {tarball: https://codeload.github.com/ciderapp/musickit-types/tar.gz/86ceb915ea55ce61ebd7bb3e36685a68c908a5df}
+    version: 1.0.0
+
+  '@types/musickit@https://codeload.github.com/ciderapp/musickit-types/tar.gz/ee13e00ce4241e61de0712b1b5a103467ddef69d':
+    resolution: {tarball: https://codeload.github.com/ciderapp/musickit-types/tar.gz/ee13e00ce4241e61de0712b1b5a103467ddef69d}
     version: 1.0.0
 
   '@types/node@20.16.10':
@@ -1069,6 +1077,10 @@ snapshots:
       '@babel/helper-string-parser': 7.29.7
       '@babel/helper-validator-identifier': 7.29.7
 
+  '@ciderapp/pluginkit@https://codeload.github.com/ciderapp/pluginkit/tar.gz/9b92a4d6d1ff731ee8699f722661fbd038ff36b5':
+    dependencies:
+      '@types/musickit': https://codeload.github.com/ciderapp/musickit-types/tar.gz/ee13e00ce4241e61de0712b1b5a103467ddef69d
+
   '@emnapi/core@1.10.0':
     dependencies:
       '@emnapi/wasi-threads': 1.2.1
@@ -1305,6 +1317,8 @@ snapshots:
   '@types/lodash@4.17.10': {}
 
   '@types/musickit@https://codeload.github.com/ciderapp/musickit-types/tar.gz/86ceb915ea55ce61ebd7bb3e36685a68c908a5df': {}
+
+  '@types/musickit@https://codeload.github.com/ciderapp/musickit-types/tar.gz/ee13e00ce4241e61de0712b1b5a103467ddef69d': {}
 
   '@types/node@20.16.10':
     dependencies:
