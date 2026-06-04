@@ -12,6 +12,7 @@ export default {
     version: '0.0.1',
     author: 'your_username',
     repo: 'https://github.com/ciderapp/plugin-template',
+    pluginKitVersion: '4',
     entry: {
         'plugin.js': {
             type: 'main',

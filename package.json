@@ -12,24 +12,24 @@
   "dependencies": {
     "@paralleldrive/cuid2": "^2.2.2",
     "lodash": "^4.17.21",
-    "vue": "^3.5.13"
+    "vue": "^3.5.35"
   },
   "devDependencies": {
-    "@ciderapp/pluginkit": "github:ciderapp/pluginkit",
+    "@ciderapp/pluginkit": "github:ciderapp/pluginkit#cider-4",
     "@types/lodash": "^4.17.6",
     "@types/node": "^20.14.9",
     "@types/musickit": "ciderapp/musickit-types",
     "@vitejs/plugin-vue": "^5.2.1",
     "adm-zip": "0.5.9",
-    "pinia": "^2.2.0",
+    "pinia": "^3.0.4",
     "sass": "^1.77.6",
     "tsx": "^4.16.5",
     "typescript": "^5.2.2",
-    "unplugin-auto-import": "^0.17.6",
-    "vite": "^6.0.7",
-    "vite-plugin-css-injected-by-js": "^3.5.1",
+    "unplugin-auto-import": "^0.17.8",
+    "vite": "^8.0.16",
+    "vite-plugin-css-injected-by-js": "^3.5.2",
     "vite-tsconfig-paths": "^4.3.2",
-    "vue-tsc": "^2.0.21",
+    "vue-tsc": "^3.3.3",
     "yaml": "^2.4.5"
   },
   "packageManager": "pnpm@9.10.0+sha512.73a29afa36a0d092ece5271de5177ecbf8318d454ecd701343131b8ebc0c1a91c487da46ab77c8e596d6acf1461e3594ced4becedf8921b074fbd8653ed7051c"
