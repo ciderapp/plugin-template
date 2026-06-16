@@ -52,7 +52,7 @@ const simpleMenu = ContextMenuAPI.createMenu(({ actionItem }) => {
  * 
  * It also provides showContextMenu as well so that you can show the context menu programmatically as well as a direct reference to `menu`.
  */
-const { elementRef: ctxMenuRef } = useContextMenu(ContextMenuAPI.createMenu(({ actionItem }) => {
+useContextMenu(ContextMenuAPI.createMenu(({ actionItem }) => {
     /**
      * This pattern allows for the context menu content to be recreated on every invocation.
      * This is useful if you want to have dynamic content in your context menu.

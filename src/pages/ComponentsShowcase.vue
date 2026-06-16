@@ -68,7 +68,7 @@ onMounted(async () => {
         </template>
 
         <template v-if="mediaItems && currentSection === 'media-items'">
-            <div class="component-title"> &lt;cider-mediaitem /&gt; </div>
+            <div class="component-title"> &lt;cider-media-item /&gt; </div>
             <cider-media-item :item="mediaItems[2]" />
 
             <div class="component-title"> &lt;cider-power-swoosh /&gt; </div>
