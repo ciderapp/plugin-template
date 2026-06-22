@@ -1,7 +1,22 @@
 <script setup lang="ts">
-import { useConfig } from "../main";
+import { useCider } from "@ciderapp/pluginkit";
+import PluginConfig from "../plugin.config";
 
-const cfg = useConfig()
+type TemplatePluginConfig = {
+  favoriteColor: "red" | "green" | "blue";
+  count: number;
+  booleanOption: boolean;
+};
+
+const config = useCider().config.getRef() as Record<string, any>;
+config.plugins ??= {};
+config.plugins[PluginConfig.identifier] ??= {
+  favoriteColor: "blue",
+  count: 0,
+  booleanOption: false,
+};
+
+const cfg = config.plugins[PluginConfig.identifier] as TemplatePluginConfig;
 </script>
 
 <template>
