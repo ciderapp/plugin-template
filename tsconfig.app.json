@@ -16,7 +16,7 @@
     "moduleDetection": "force",
     "noEmit": true,
     "jsx": "preserve",
-    "types": ["vite/client", "@ciderapp/pluginkit"],
+    "types": ["vite/client", "@ciderapp/pluginkit", "musickit"],
 
     /* Linting */
     "strict": true,
